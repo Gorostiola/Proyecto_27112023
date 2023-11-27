@@ -1,0 +1,6 @@
+C:\Users\goros\source\repos\Personas\EntityUsuarios\bin\Debug\EntityUsuarios.dll
+C:\Users\goros\source\repos\Personas\EntityUsuarios\bin\Debug\EntityUsuarios.pdb
+C:\Users\goros\source\repos\Personas\EntityUsuarios\obj\Debug\EntityUsuarios.csproj.AssemblyReference.cache
+C:\Users\goros\source\repos\Personas\EntityUsuarios\obj\Debug\EntityUsuarios.csproj.CoreCompileInputs.cache
+C:\Users\goros\source\repos\Personas\EntityUsuarios\obj\Debug\EntityUsuarios.dll
+C:\Users\goros\source\repos\Personas\EntityUsuarios\obj\Debug\EntityUsuarios.pdb

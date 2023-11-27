@@ -1,0 +1,83 @@
+﻿@model IEnumerable<EntityUsuarios.EUsuarios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["mensaje"]</div>
+}
+
+
+
+<div class="row align-items-center">
+
+    <div class="col-4">
+        @Html.ActionLink("Crear Persona", "Agregar", null, new { @class = "btn btn-primary" })
+    </div>
+
+    <div class="col col-4">
+        <h5 class="text-black text-opacity-50">Existen @Model.Count() registros</h5>
+    </div>
+
+    <div class="col col-4">
+        @using (Html.BeginForm())
+        {
+            <div class="input-group ">
+                <input type="text" class="form-control" name="valor" id="valor" />
+                <input class="btn btn-outline-dark" type="submit" name="search" formaction="/Home/Buscar" value="Buscar" />
+
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCompleto)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.edad)
+        </th>
+
+        <th>Opcines</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.edad)
+            </td>
+
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+
+                    @Html.ActionLink("Delete", "Delete", new { id=item.id })*@
+
+                <a href="/Home/EditarGet/@item.id" class="btn btn-success">Editar</a>
+                <a href="/Home/Eliminar/@item.id" onclick="return confirm('¿Seguro que deseas eliminar a la banda ?')" class="btn btn-danger">Eliminar</a>
+
+            </td>
+        </tr>
+    }
+
+</table>

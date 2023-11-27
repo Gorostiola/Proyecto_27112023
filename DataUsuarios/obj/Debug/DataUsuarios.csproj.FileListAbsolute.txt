@@ -1,0 +1,6 @@
+C:\Users\goros\source\repos\Personas\DataUsuarios\bin\Debug\DataUsuarios.dll
+C:\Users\goros\source\repos\Personas\DataUsuarios\bin\Debug\DataUsuarios.pdb
+C:\Users\goros\source\repos\Personas\DataUsuarios\obj\Debug\DataUsuarios.csproj.AssemblyReference.cache
+C:\Users\goros\source\repos\Personas\DataUsuarios\obj\Debug\DataUsuarios.csproj.CoreCompileInputs.cache
+C:\Users\goros\source\repos\Personas\DataUsuarios\obj\Debug\DataUsuarios.dll
+C:\Users\goros\source\repos\Personas\DataUsuarios\obj\Debug\DataUsuarios.pdb
