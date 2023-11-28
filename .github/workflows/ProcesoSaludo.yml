@@ -1,0 +1,14 @@
+name: Cuando se realiza una pull
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  Nombre-Trabajo:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Saludo de bienvenida
+        run: echo "Hola Mundo"
+      - name: Adios
+        run: echo "Gracias por visitarme"
+    
