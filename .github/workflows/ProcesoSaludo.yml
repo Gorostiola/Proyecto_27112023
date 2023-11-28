@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   Nombre-Trabajo:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Saludo de bienvenida
         run: echo "Hola Mundo"
